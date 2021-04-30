@@ -1,0 +1,137 @@
+#cards{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: auto;
+  height: 100%;
+}
+
+#wrapper_card{
+  padding:0px;
+  height:auto;
+}
+
+.card{
+  padding: 0px;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0px 10px 30px rgb(0,0,0,0.2);
+  border-radius: 2px;
+  margin: 15px;
+  flex-basis: 250px;
+  flex-grow: 1;
+
+  float:left;
+  width:250px;
+  height:320px;
+  position:relative;
+  cursor:pointer;
+}
+
+#card_img_1{
+  background-image: url(../../images/Cover.jpg);
+  background-size: cover;
+  width:250px;
+  height:200px;
+  border-radius: 2px;
+}
+
+#card_img_2{
+  background-image: url(../../images/Naselecken.jpg);
+  background-size: cover;
+  background-position: 40%;
+  width:250px;
+  height:200px;
+  border-radius: 2px;
+}
+
+#card_img_3{
+  background-image: url(../../images/Pustel.jpg);
+  background-size: cover;
+  width:250px;
+  height:200px;
+  border-radius: 2px;
+}
+
+.card img {
+  width:250px;
+  height:200px;
+  border-radius: 2px;
+  position:absolute;
+}
+
+.card_caption {
+  width: 250px;
+  height:120px;
+  position:absolute;
+  bottom:0px;
+}
+
+.card_caption h3 {
+  flex-grow: 1;
+  padding-left: 20px;
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+
+
+#cards_vertical{
+  display: flex;
+  flex-wrap: wrap;
+  width: auto;
+  height: 360px;
+  justify-content: space-around;
+}
+
+#wrapper{
+  padding:0px;
+  height:auto;
+  overflow:hidden;
+}
+
+.image-container{
+  float:left;
+  width:240px;
+  height:360px;
+  position:relative;
+  margin:20px;
+  cursor:pointer;
+}
+
+.image-container img{
+  width:240px;
+  height:360px;
+  position:absolute;
+  border-radius: 4px;
+}
+
+.image-caption {
+  width: 240px;
+  height:360px;
+  background:rgba(0, 0, 0, 0.8);
+  position:absolute;
+  opacity:0;
+  transition:all 300ms ease-in-out;
+}
+
+.image-caption h1{
+  padding:10px 0px 5px 0px;
+  font-size:20px;
+  font-weight: bold;
+  margin-left: 10px;
+  color: #3792e3;
+}
+
+.image-caption p{
+  text-align:justify;
+  font-family: 'Lora', serif;
+  color:#fff;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size:14px;
+}
+
+.image-container:hover .image-caption{
+  opacity:1;
+}
